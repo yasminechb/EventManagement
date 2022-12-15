@@ -1,0 +1,21 @@
+.footer{
+    padding: 4rem 6rem;
+    background-color: black;
+    color: beige;
+}
+.top{
+    display:flex ;
+    align-items:center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.top i {
+    color:white;
+    font-size:2rem;
+    margin-left: 1rem;
+}
+.top i:hover{
+    color:aqua;
+}

@@ -1,0 +1,56 @@
+.hero{
+    width: 100%;
+    height: 80%;
+    position: relative ;
+}
+
+.hero-mid {
+    width: 100%;
+    height: 90vh; /*edit toul mtaa img mtaa les autres pages sauf page home*/
+    position: relative ; 
+}
+img{
+    width: 100%;
+    height: 50%; 
+    object-fit: cover;
+}
+.hero-text{
+    position: absolute;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    margin-bottom: 880px;
+}
+.hero-text h1{
+    font-size:3 rem ;
+    font-weight: 800;
+    color:#fff;
+    -webkit-background-clip: text;
+   
+}
+.hero-text p{
+    font-size: 1.3 rem;
+    font-weight:800;
+    color:#fff;
+    -webkit-background-clip: text;
+    padding:0.5 rem 0 2rem 0;
+   
+}
+.hero-text .show{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 33 rem 2rem;
+    border-radius: 0px;
+    font-size: 1.1 rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+.hero-text .hide{
+    display:none ;
+}
+.hero-mid h1 {
+    margin-bottom: 600px;
+    padding-top: 4 rem;
+}
