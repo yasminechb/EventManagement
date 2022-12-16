@@ -54,12 +54,13 @@ function Home() {
      })
     }
    }
-    /* find all users */
-  useEffect(async () => {
-    await axios.get("/findevents").then((res) => {
-      setEvents(res.data);
-    });
-  });
+  //   /* find all users */ To FIx !
+  // useEffect(async () => {
+  //   await axios.get("/findevents").then((res) => {
+  //     setEvents(res.data);
+  //   });
+  // });
+ 
     return (
         <div className="row p-4">
           <Alert message={message} show={show}/>
