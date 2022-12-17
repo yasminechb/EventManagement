@@ -5,10 +5,16 @@ import axios from "axios";
 import Alert from "../components/Alert";
 import {useState} from 'react';
 import {useEffect} from 'react'
-
+import {useMutation, useQuery}  from "react-query"
 
 function Home() {
-  const [events, setEvents] = useState([]);
+  const request_result  = useQuery("all_events",async ()=>{
+    const axios_req = await axios("http://localhost:3002/findevents")
+    return axios_req.data
+  })
+
+  console.log(request_result)
+  const events = request_result.data
   const [form, setForm] = useState({});
   const [errors, setErrors] = useState({});
   const [message, setMessage] = useState("");
@@ -24,7 +30,8 @@ function Home() {
 
   const onSubmitHandler = (e)=>{
     e.preventDefault();
-    axios.post('/findevents', form)
+    console.log(form)
+    axios.post('http://localhost:3002/addevent', form)
     .then(res=>{
       setMessage(res.data.message)
       /* hide form after save */
@@ -41,10 +48,10 @@ function Home() {
   }
 
   /* delete */
-  const OnDelete = (id__)=>{
+  const OnDelete = async (id__)=>{
     if(window.confirm("are you sure to delete this event")){
  
-     axios.delete(`/delevent/${id__}`)
+      axios.delete(`http://localhost:3002/delevent/${id__}`)
      .then(res=>{
       setMessage(res.data.message)
       setShow(true)
@@ -54,13 +61,11 @@ function Home() {
      })
     }
    }
-  //   /* find all users */ To FIx !
-  // useEffect(async () => {
-  //   await axios.get("/findevents").then((res) => {
-  //     setEvents(res.data);
-  //   });
-  // });
- 
+
+   if(request_result.isLoading)
+    return <h1>Loading ! </h1>
+    if(request_result.err)
+    return <h1>error: {JSON.stringify(request_result.err)} </h1>
     return (
         <div className="row p-4">
           <Alert message={message} show={show}/>
