@@ -7,7 +7,7 @@ function Apropos() {
     return(
         <>
         
-        <Navbar />
+       
         <Hero
       cName="hero-mid"
       heroImg={aproposImg}
@@ -16,7 +16,7 @@ function Apropos() {
       url="/"
       btnClass = "hide"
       />
-      <Footer/>
+     
     </>
 
        

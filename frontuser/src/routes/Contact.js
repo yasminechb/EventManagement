@@ -7,7 +7,7 @@ function Contact() {
     return(
         <>
                
-        <Navbar />
+        
         <Hero
       cName="hero-mid"
       heroImg={contactImg}
@@ -17,7 +17,7 @@ function Contact() {
       btnClass = "hide"
       />
       <ContactForm/>
-      <Footer/>
+      
         </>
     )
     }

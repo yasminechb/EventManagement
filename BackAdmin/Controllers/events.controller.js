@@ -26,7 +26,9 @@ const AddEvent= async (req, res)=>{
 
 const FindAllEvents= async (req, res)=>{
     try {
+        console.log("request received")
         const data = await Events.find();
+        console.log("request arrived")
         res.status(201).json(data);
       } catch (error) {
         console.log(error.message);

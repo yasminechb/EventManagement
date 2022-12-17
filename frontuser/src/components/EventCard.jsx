@@ -1,5 +1,5 @@
 //<>
-
+import "./EventStyles.css"
 
 
 const EventCard = (props)=>{
@@ -8,7 +8,7 @@ const EventCard = (props)=>{
     const date = props.Date
     const description = props.Description
     const image = "/"
-    return (<div>
+    return (<div className="event">
         <h1>Name: {name}</h1>
         <h3>Organisateur: {organisateur}</h3>
         <small>{date}</small>
