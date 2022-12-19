@@ -8,7 +8,7 @@ function ContactForm() {
         <input placeholder="Email"/>
         <input placeholder="Objet"/>
          <textarea placeholder="Message " rows="4">  </textarea>
-         <buttom>Envoyer</buttom>
+         <buttom className="btn">Envoyer</buttom>
       </form>
     </div>
   );

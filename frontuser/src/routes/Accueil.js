@@ -12,7 +12,7 @@ return(
       title= "Vos meilleurs evenement"
       texte="Choisissez votre evenement préféré."
       buttonText="Consulter maintenant"
-      url="/"
+      url="http://localhost:3001/evenements"
       btnClass = "show"
       />
      <Destination/>
