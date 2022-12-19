@@ -1,0 +1,12 @@
+.about-container{
+    margin:  4rem 2rem;
+    text-align: start;
+    background-color: beige;
+}
+.about-container h1{
+    padding-bottom: 1 rem;
+}
+.about-container p{
+    padding-bottom:2rem;
+
+}

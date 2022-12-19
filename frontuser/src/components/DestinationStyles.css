@@ -1,0 +1,59 @@
+.destination{
+    margin:  4rem 2rem;
+    text-align: start;
+   
+    
+}
+.destination h1 {
+    font-size: 3 rem;
+    
+}
+.haut{
+    padding-top: 12%; 
+}
+.first-des{   /*radina text bahdha l img */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5 rem;
+    background-color: beige;
+}
+.first-des-reverse{   /*radina text bahdha l img */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5 rem;
+}
+.des-text{
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+
+}
+.des-text h2 {
+    padding-bottom:1 rem ;
+}
+.image{
+    position: relative;
+    width: 50%;
+    display:flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.image img {
+    width: 49%;
+    height: 350px;
+    object-fit:cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0);
+
+}
+.image img:nth-child(2){
+    position: absolute ;
+    top:-10%;
+    right:0;
+}
+.espace{
+    margin-top: 10%;
+}

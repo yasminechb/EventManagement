@@ -59,7 +59,7 @@ function Evenements(props) {
       url="/"
       btnClass = "hide"
       />
-      <h1>nom de l'event{props.name}</h1>
+      <h1>Nos évenements{props.name}</h1>
      
 
         {all_events.map((evenement)=>{

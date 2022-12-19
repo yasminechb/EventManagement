@@ -3,6 +3,7 @@ import Hero from "../components/Hero" ;
 import aproposImg from"../assests/img1.jpg"
 import Navbar from "../components/Navbar" ;
 import Footer from "../components/Footer" ;
+import AboutUs from "../components/AboutUs";
 function Apropos() {
     return(
         <>
@@ -16,7 +17,7 @@ function Apropos() {
       url="/"
       btnClass = "hide"
       />
-     
+     <AboutUs/>
     </>
 
        
