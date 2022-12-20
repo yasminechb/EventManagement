@@ -7,9 +7,10 @@ const SignIn = () => {
  
         <>
            <div className="formulaire"/>
-        <form>
+        <form className='yass'>
     <h2>Sign Up!</h2>
-      <fieldset>
+    <div className='yass'>
+      <fieldset className='yass'>
         <legend>Create Account</legend>
         <ul className='lul'>
           <li>
@@ -26,15 +27,16 @@ const SignIn = () => {
           </li>
         </ul>
       </fieldset>
+      </div>
       <button>Submit</button>
       <button type="button" onClick={ () => this.changeView("logIn")}>Have an Account?</button>
       
       
       
+
       
-      
-      
-      </form></>
+      </form>
+      </>
            );
     
             
