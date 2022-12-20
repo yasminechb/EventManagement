@@ -4,7 +4,7 @@ import RowDetails from "../components/RowDetails";
 import axios from "axios";
 import Alert from "../components/Alert";
 import {useState} from 'react';
-import {useEffect} from 'react'
+import {useEffect} from 'react';
 import {useMutation, useQuery}  from "react-query"
 
 function Home() {
@@ -60,7 +60,7 @@ function Home() {
       }, 4000);
      })
     }
-   }
+   } 
 
    if(request_result.isLoading)
     return <h1>Loading ! </h1>
