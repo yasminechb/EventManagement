@@ -14,7 +14,8 @@ section#entry-page {
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   box-sizing: border-box;
-  form {
+}
+  .form{
     grid-column: 2;
     grid-row: 2;
     display: grid;
@@ -24,6 +25,7 @@ section#entry-page {
     background-color: rgba(255,255,255,0.9);
     border-radius: 10px;
     box-shadow: 0 32px 64px rgba(0,0,0,0.2);
+  }
     h2 {
       margin-bottom: 5px;
       text-align: center;
@@ -37,18 +39,21 @@ section#entry-page {
       border: none;
       border-radius: 5px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-      legend {
+    }
+      .legend {
         padding: 5px;
         background-color: #fff;
         border-radius: 5px;
       }
-      ul {
+     .lul {
         margin: 0;
         padding: 0;
+     }
         li {
           display: grid;
           align-items: center;
           margin: 10px;
+        }
           a {
             color: #02c;
           }
@@ -65,45 +70,21 @@ section#entry-page {
             padding: 5px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            &:hover {
+           /* &:hover {
               border: 1px solid #aaf;
-            }
+            }*/
           }
-        }
-      }
-    }
-    button {
+        
+   
+    .button {
       padding: 10px;
       border:1px solid rgba(0,0,0,0);
       border-radius: 5px;
       background: #fff;
       box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-      &:hover {
-        background-color: #eef;
-        border: 1px solid #aaf;
-      }
     }
-  }
-}
-@media only screen and (min-width: 420px) {
-  form {
-    h2 {
-      font-size: 40px;
-    }
-    fieldset {
-      ul {
-        li {
-          grid-template-columns: 100px 1fr;
-          label {
-            padding-right: 10px;
-            padding-bottom: 0;
-            text-align: right !important;
-          }
-        }
-      }
-    }
-  }
-}
+
+
 
 @keyframes Gradient {
   0% {
