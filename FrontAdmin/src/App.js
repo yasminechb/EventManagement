@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from "./pages/Footer" ;
 import {
   BrowserRouter,
   Routes,
@@ -15,7 +16,9 @@ function App() {
        <Route path="/:id" element={<Details />} />
        <Route path="/S" element={<SignIn />} />
     </Routes>
+    <Footer/>
   </BrowserRouter>
+  
   );
 }
 
