@@ -1,42 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Jura:400');
 * { font-family: Jura, Arial; font-weight: 400; }
-body { margin: 0; padding: 0; }
-h1,h2,h3,h4,h5,h6,p { margin: 0; }
+
 
 .formulaire {
   margin-bottom: 7rem;
   display: grid;
   grid-template-columns: 1fr minmax(200px,400px) 1fr;
   grid-template-rows: 1fr minmax(auto,1fr) 1fr;
-  grid-gap: 10px;
+  grid-gap: 50px;
   width: 100%;
  
- /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 200% 200%;
   animation: Gradient 15s ease infinite;
-  box-sizing: border-box;
+  
 }
 .yass{
- /* background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
  background-color: beige;
 }
   .form{
   
-    /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
+   
     grid-column: 2;
     grid-row: 2;
     display: grid;
     grid-gap: 10px;
-    margin: auto 0;
+    
     padding: 20px;
-    background-color: rgba(255,255,255,0.9);
+   /*background-color: rgba(255,255,255,0.9);*/
     border-radius: 10px;
     box-shadow: 0 32px 64px rgba(0,0,0,0.2);
   }
     h2 {
       margin-bottom: 5px;
       text-align: center;
-      text-shadow: 0 4px 16px #fff;
+      color: #E73C7E;
       font-size: 30px;
       font-weight: 100;
     }
@@ -87,7 +86,7 @@ h1,h2,h3,h4,h5,h6,p { margin: 0; }
       padding: 10px;
       border:1px solid rgba(0,0,0,0);
       border-radius: 5px;
-      background: #fff;
+      background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
       box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     }
 

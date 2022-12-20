@@ -6,12 +6,11 @@ const SignIn = () => {
   return (
  
         <>
-           <div className="formulaire"/>
-        <form className='yass'>
+<div className="formulaire"/>
+  <form className='form'>
     <h2>Sign Up!</h2>
-    <div className='yass'>
-      <fieldset className='yass'>
-        <legend>Create Account</legend>
+      <div className='yass'>
+      <fieldset className='fieldset'>
         <ul className='lul'>
           <li>
             <label for="username">Username:</label>
@@ -28,8 +27,9 @@ const SignIn = () => {
         </ul>
       </fieldset>
       </div>
-      <button>Submit</button>
-      <button type="button" onClick={ () => this.changeView("logIn")}>Have an Account?</button>
+      <button onclick= "window.open(`http://localhost:3006/home)">Submit</button>
+      <button onclick="window.location.href = 'http://localhost:3006/home';">Cliquez Ici</button>
+      
       
       
       
