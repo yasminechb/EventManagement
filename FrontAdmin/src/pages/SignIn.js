@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './SignIn.css';
 
 
 const SignIn = () => {
+  const usenav = useNavigate()
   return (
  
         <>
@@ -27,8 +29,8 @@ const SignIn = () => {
         </ul>
       </fieldset>
       </div>
-      <button onclick= "window.open(`http://localhost:3006/home)">Submit</button>
-      <button onclick="window.location.href = 'http://localhost:3006/home';">Cliquez Ici</button>
+      <button onClick={(e)=>usenav("/home")}>Submit</button>
+      <button onClick={(e)=>usenav("/home")}>Cliquez Ici</button>
       
       
       
