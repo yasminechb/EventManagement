@@ -125,7 +125,7 @@ function Home() {
                 </tr>
               </thead>
               <tbody>
-                {events.map(({ EventName, Organisateur, Date, Description, Image, _id }) => (
+                {events && events.map(({ EventName, Organisateur, Date, Description, Image, _id }) => (
                   <RowDetails
                     EventName={EventName}
                     Organisateur={Organisateur}

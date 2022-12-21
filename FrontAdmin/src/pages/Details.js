@@ -3,7 +3,7 @@ import InputGroup from "../components/InputGroup";
 import axios from "axios";
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react'
-import {useMutation, useQuery}  from "react-query"
+import {QueryClient, useMutation, useQuery}  from "react-query"
 
 function Detail() {
  
@@ -21,23 +21,31 @@ function Detail() {
     });
     
   };
-
+  const qr = new QueryClient()
   const onSubmitHandler = (e)=>{
     e.preventDefault();
     console.log(form)
-    axios.put(`http://localhost:3002/UpdateEvent/${id}`, form)
+    axios.put(`http://localhost:3002/upevent/${id}`, form)
     .then(res=>{
+      qr.invalidateQueries("all_events")
       navigate('/')
+      
     })
     .catch(err=>setErrors(err.response.data))
     
   }
-  useEffect(async () => {
-    await axios.get(`http://localhost:3002/FindSinglEvent/${id}`).then((res) => {
-      setForm(res.data);
-    });
-  }, []);
-  
+
+  const request_result  = useQuery(["sevent",id],async ()=>{
+    const axios_req = await axios(`http://localhost:3002/sevent/${id}`)
+    return axios_req.data
+  },{onSuccess: (res)=>{
+    setForm(res)
+  }})
+
+  if(request_result.isLoading)
+    return <h1>Loading ...</h1>
+  if(request_result.error)
+    return <h1>Error ! </h1>
   return (
     <div>
       <div className="container mt-4 col-12 col-lg-4">

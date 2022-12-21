@@ -15,15 +15,15 @@ const SignIn = () => {
       <fieldset className='fieldset'>
         <ul className='lul'>
           <li>
-            <label for="username">Username:</label>
+            <label htmlFor="username">Username:</label>
             <input type="text" id="username" required/>
           </li>
           <li>
-            <label for="email">Email:</label>
+            <label htmlFor="email">Email:</label>
             <input type="email" id="email" required/>
           </li>
           <li>
-            <label for="password">Password:</label>
+            <label htmlFor="password">Password:</label>
             <input type="password" id="password" required/>
           </li>
         </ul>
