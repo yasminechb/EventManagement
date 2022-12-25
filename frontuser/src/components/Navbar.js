@@ -16,7 +16,7 @@ return(           //inside this return we will start creating our navbar
         </li>
             )
         })}
-        <button>se connecter</button>
+        
      </ul>
     </nav>  // nav bar items aana logo ,
 );

@@ -30,7 +30,7 @@ const SignIn = () => {
       </fieldset>
       </div>
       <button onClick={(e)=>usenav("/home")}>Submit</button>
-      <button onClick={(e)=>usenav("/home")}>Cliquez Ici</button>
+      
       
       
       

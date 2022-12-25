@@ -7,6 +7,7 @@ import {useState} from 'react';
 import {useEffect} from 'react';
 import {useMutation, useQuery}  from "react-query"
 
+
 function Home() {
   const request_result  = useQuery("all_events",async ()=>{
     const axios_req = await axios("http://localhost:3002/findevents")

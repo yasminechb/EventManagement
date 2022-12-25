@@ -56,7 +56,7 @@ img{
 }
 .show{
     margin-top: 30px;
-    background-color: beige;
+    background-color: #ffdee9;
     border-radius: 50px;
     border-width: 0;
     box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
@@ -71,6 +71,6 @@ img{
     transition: all 200ms;
     }
     .show:hover{
-        background-color: #bcc5bf;
+        background-color: #ffdee9;
         transform: scale(1.05);
         } 

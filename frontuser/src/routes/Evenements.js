@@ -19,18 +19,7 @@ import {useQuery} from "react-query"
 //     Date: "08/15/1625",
 //     Description: "dsfkdnfoe",
 //     Organisateur: "opt"
-//   }
-// ]
-/* Boucle Infi : ( a voir use effect )
-const GetDataOfEvents = ()=>{
-  const [Events,setEvents] = useState(null)
-  const resultat = axios.get("http://localhost:3002/findevents").then((obj)=>{
-    return obj.data
-  }).then((all_events)=>{
-    setEvents(all_events)
-  })
-  return Events
-}*/
+
 
 function Evenements(props) {
    
@@ -61,12 +50,16 @@ function Evenements(props) {
       />
       <h1>Nos évenements{props.name}</h1>
      
-
+       <div class="row">
+        <div class="column">
         {all_events.map((evenement)=>{
           return (
             < EventCard {...evenement} />
           )
         })}
+        </div>
+        </div>
+      
    
 
       </>

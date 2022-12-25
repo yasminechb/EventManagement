@@ -1,5 +1,11 @@
 .event{
-    background-color:beige ;
-    margin: 4rem 6rem;
+    background-color:#ffdee9 ;
+   
+    box-shadow: 0 4px 6px 0;
+    width: 500px;
+    text-align: center;
     
+      
 }
+
+

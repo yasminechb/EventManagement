@@ -7,12 +7,17 @@ const EventCard = (props)=>{
     const organisateur = props.Organisateur
     const date = props.Date
     const description = props.Description
-    const image = "/"
-    return (<div className="event">
-        <h1>Name: {name}</h1>
+   
+    return (
+    <div class="row">
+    <div class="column">
+    <div className="event">
+        <h2>Name: {name}</h2>
         <h3>Organisateur: {organisateur}</h3>
         <small>{date}</small>
         <p>{description}</p>
+    </div>
+    </div>
     </div>)
 }
 
