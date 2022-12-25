@@ -6,6 +6,7 @@ import Alert from "../components/Alert";
 import {useState} from 'react';
 import {useEffect} from 'react';
 import {useMutation, useQuery}  from "react-query"
+import './Home.css';
 
 
 function Home() {

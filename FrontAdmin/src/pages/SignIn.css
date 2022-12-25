@@ -7,10 +7,12 @@
   display: grid;
   grid-template-columns: 1fr minmax(200px,400px) 1fr;
   grid-template-rows: 1fr minmax(auto,1fr) 1fr;
-  grid-gap: 50px;
+  grid-gap: 30px;
   width: 100%;
  
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-color: #FFF0F5;
+    background-image: linear-gradient(180deg, #FFF0F5 0%, black 100%);
+
   background-size: 200% 200%;
   animation: Gradient 15s ease infinite;
   
