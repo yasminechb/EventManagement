@@ -9,7 +9,7 @@ function RowDetails({ EventName, Organisateur, Date, Description, Image, Id, OnD
     <td>{Organisateur}</td>
     <td>{Date}</td>
     <td>{Description}</td>
-    <td>{Image}</td>
+    <td> <img src={Image} style={{width:"400px", height:"200px"}}/> </td>
     <td className="gap__actions">
       <span className="badge bg-info">
         <Link to={`/${Id}`} className="text-white">
